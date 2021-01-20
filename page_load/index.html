@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajaz Data</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#choice").change(function(){
+				// alert("Yes,we change the selection: " + $(this).val());
+				if ($(this).val()!='') {
+					$.get(
+						'data.php',
+						{what: $(this).val()},
+						function(data){
+							$("#result").html(data);
+						}
+
+						);
+				}
+
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<form action="">
+
+
+		<p>Show list of: 
+			<select name="" id="choice">
+				<option value="">Select</option>
+				<option value="good">Good Guys</option>
+				<option value="bad">bad Guys</option>
+			</select>
+		</p>
+		<p id="result"></p>	
+	</form>
+</body>
+</html>
