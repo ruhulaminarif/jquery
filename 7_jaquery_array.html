@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+	<script>
+		$(document).ready(function(){
+			var pars = $("p");
+			for ( i = 0; i<pars.length; i++) {
+				alert("Found paragraph:" + pars[i].innerHTML);
+			}
+		})
+
+	</script>
+	<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Maxime perspiciatis laboriosam fuga officia. Molestias nisi dolor nobis accusamus esse perferendis sed similique voluptate assumenda laborum labore soluta maiores rem, ut.</p>
+	<p>This is me</p>
+	<p>This is heading</p>
+	<p>Who are You</p>
+</body>
+</html>
