@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				//$("ul li:first-child").hide();
+				$("ul li:last-child").hide();
+			});
+
+		});
+	</script>
+
+<button id="btn1">Click Here</button>
+
+	<h2>List One</h2>
+	<ul>
+		<li>Apple</li>
+		<li>Mango</li>
+		<li>Orange</li>
+	</ul>
+	<h2>List Two</h2>
+	<ul>
+		<li>PHP</li>
+		<li>JQuery</li>
+		<li>JavaScript</li>
+	</ul>
+</body>
+</html>
