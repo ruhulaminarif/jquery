@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		.box1{
+			width: 150px;
+			height: 150px;
+			background-color: #F42525;
+			margin: 10px;
+		}
+		.box2{
+			width: 150px;
+			height: 150px;
+			background-color: #3DF86D;
+			margin: 10px;
+		}
+		.box3{
+			width: 150px;
+			height: 150px;
+			background-color: #F42525;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$(".box1").fadeTo('fast',Math.random());
+				$(".box2").fadeTo('slow',Math.random());
+				$(".box3").fadeTo(3000, Math.random());
+
+			});
+		});
+	</script>
+
+<button id="btn1">Click</button>
+
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+	
+</body>
+</html>
