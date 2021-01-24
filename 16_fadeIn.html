@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		.box1{
+			width: 150px;
+			height: 150px;
+			background-color: #F42525;
+			display: none;
+			margin: 10px;
+		}
+		.box2{
+			width: 150px;
+			height: 150px;
+			background-color: #3DF86D;
+			display: none;
+			margin: 10px;
+		}
+		.box3{
+			width: 150px;
+			height: 150px;
+			background-color: #F42525;
+			display: none;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$(".box1").fadeIn();
+				$(".box2").fadeIn('slow');
+				$(".box3").fadeIn(3000);
+
+			});
+			$("#btn2").click(function(){
+				$(".box1").fadeOut();
+				$(".box2").fadeOut('slow');
+				$(".box3").fadeOut(3000);
+
+			});
+			$("#btn3").click(function(){
+				$(".box1").fadeToggle();
+				$(".box2").fadeToggle('slow');
+				$(".box3").fadeToggle(3000);
+
+			})
+
+		});
+	</script>
+
+<button id="btn1">Click</button>
+<button id="btn2">hide</button>
+<button id="btn3">Show/hide</button>
+
+
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+	
+</body>
+</html>
